@@ -1,0 +1,83 @@
+{
+    "Name": "Wave",
+    "Keyframes": [
+        {
+            "HasEmote": "True",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "Expression": "Happy",
+            "WaitTime": 1500,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightChest",
+                    "Angle": 55
+                },
+                {
+                    "Joint": "RightShoulder",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightBicep",
+                    "Angle": 55
+                },
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 30
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 90
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 30
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 90
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 30
+                }
+            ]
+        }
+    ]
+}

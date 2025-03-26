@@ -1,0 +1,1375 @@
+<?xml version="1.0" ?>
+<robot name="JAMIE">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link_1">
+  <inertial>
+    <origin xyz="-7.082625526652554 -3.194928238208809 -1.9152307850621764" rpy="0 0 0"/>
+    <mass value="0.7432940286532945"/>
+    <inertia ixx="-10.312002" iyy="-40.006317" izz="-44.866266" ixy="16.817932" iyz="4.547796" ixz="10.081673"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/base_link_1_Hips_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/base_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_hip_servo_1">
+  <inertial>
+    <origin xyz="0.3481593841708204 -0.5002916686703776 2.5165406424869587" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-7.364281" iyy="-41.607378" izz="-48.575749" ixy="17.226547" iyz="1.191145" ixz="2.863296"/>
+  </inertial>
+  <visual>
+    <origin xyz="14.33263025195361 5.317321369472444 3.48350966443747" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_hip_servo_1_Servo_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="14.33263025195361 5.317321369472444 3.48350966443747" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_hip_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_upper_leg_link_1">
+  <inertial>
+    <origin xyz="-1.2059463891036089 -8.885900069660474 0.28183096548770115" rpy="0 0 0"/>
+    <mass value="0.40917868648388056"/>
+    <inertia ixx="-88.459616" iyy="-65.177741" izz="-153.574256" ixy="75.900505" iyz="-1.674168" ixz="-1.437059"/>
+  </inertial>
+  <visual>
+    <origin xyz="11.41263025195386 5.815659973576437 0.0034820586714643387" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_upper_leg_link_1_RightUpperLeg_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="11.41263025195386 5.815659973576437 0.0034820586714643387" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_upper_leg_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="spine_link_1">
+  <inertial>
+    <origin xyz="2.7389664879622337 -0.3069084875753203 8.552612236357497" rpy="0 0 0"/>
+    <mass value="0.2835281149906091"/>
+    <inertia ixx="-15.660573" iyy="-29.774108" izz="-14.136809" ixy="0.406125" iyz="-0.427478" ixz="-14.868005"/>
+  </inertial>
+  <visual>
+    <origin xyz="9.79763807954294 -0.10396081315865602 1.1228165976495958" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/spine_link_1_Spine_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="9.79763807954294 -0.10396081315865602 1.1228165976495958" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/spine_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="spine_connector_link_1">
+  <inertial>
+    <origin xyz="1.6757196640067455 -0.9649776614963317 0.960125125221273" rpy="0 0 0"/>
+    <mass value="0.13622921421124207"/>
+    <inertia ixx="-38.717323" iyy="-46.844156" izz="-8.328719" ixy="0.911528" iyz="-1.974745" ixz="-17.824926"/>
+  </inertial>
+  <visual>
+    <origin xyz="9.447638079542948 -0.10396081315863848 -15.877183402350413" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/spine_connector_link_1_SpineConnector_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="9.447638079542948 -0.10396081315863848 -15.877183402350413" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/spine_connector_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="chest_flat_back_link_1">
+  <inertial>
+    <origin xyz="-0.25352075313304745 -3.199333221984751 4.5936897641167675" rpy="0 0 0"/>
+    <mass value="1.4220810862541415"/>
+    <inertia ixx="-601.86499" iyy="-678.150598" izz="-85.865851" ixy="19.708742" iyz="-53.483514" ixz="-220.023422"/>
+  </inertial>
+  <visual>
+    <origin xyz="7.2976380795429465 -1.3637917143448433 -15.897825602242605" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/chest_flat_back_link_1_ChestFlatBack(3)_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="7.2976380795429465 -1.3637917143448433 -15.897825602242605" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/chest_flat_back_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_torso_servo_1">
+  <inertial>
+    <origin xyz="0.3340220045241402 -1.9458841702162246 -0.013359486363345496" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-89.29739" iyy="-131.046303" izz="-42.427515" ixy="3.779133" iyz="-5.494199" ixz="-61.188967"/>
+  </inertial>
+  <visual>
+    <origin xyz="14.432644964449935 -0.6799592688640956 -20.510301014692537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_torso_servo_1_Servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="14.432644964449935 -0.6799592688640956 -20.510301014692537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_torso_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="neck_servo_1">
+  <inertial>
+    <origin xyz="0.018521139892181182 -1.9401085622339487 -0.3658553175832111" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-108.664586" iyy="-120.807557" izz="-12.747816" ixy="1.940141" iyz="-5.724898" ixz="-36.723437"/>
+  </inertial>
+  <visual>
+    <origin xyz="7.685085231003194 -0.7449512555631621 -22.988074395578654" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/neck_servo_1_Servo_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="7.685085231003194 -0.7449512555631621 -22.988074395578654" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/neck_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_shoulder_connector_link_1">
+  <inertial>
+    <origin xyz="-0.7434726910612994 -1.0498347576801164 0.11237641149520172" rpy="0 0 0"/>
+    <mass value="0.08600606317174868"/>
+    <inertia ixx="-36.300975" iyy="-61.293437" izz="-25.301042" ixy="1.969962" iyz="-2.361844" ixz="-30.149171"/>
+  </inertial>
+  <visual>
+    <origin xyz="16.356611710810096 0.28976178079405024 -20.38939888728133" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_shoulder_connector_link_1_RightShoulderConnector_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="16.356611710810096 0.28976178079405024 -20.38939888728133" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_shoulder_connector_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="neck_link_1">
+  <inertial>
+    <origin xyz="-0.06158354702758562 -0.917173278978056 0.7782640016282336" rpy="0 0 0"/>
+    <mass value="0.10422527035422174"/>
+    <inertia ixx="-68.838257" iyy="-75.119006" izz="-6.568576" ixy="0.961606" iyz="-3.144349" ixz="-21.008125"/>
+  </inertial>
+  <visual>
+    <origin xyz="7.7900844852770454 0.258009731999409 -24.895865970592016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/neck_link_1_Neck_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="7.7900844852770454 0.258009731999409 -24.895865970592016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/neck_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="neck_connector_link_1">
+  <inertial>
+    <origin xyz="-1.6967609806528818 0.9337129441538399 0.9277179183596509" rpy="0 0 0"/>
+    <mass value="0.12808373101949122"/>
+    <inertia ixx="-104.724862" iyy="-111.497835" izz="-7.003603" ixy="0.8914" iyz="-3.473758" ixz="-26.843664"/>
+  </inertial>
+  <visual>
+    <origin xyz="5.637068532273772 1.8827619112269645 -27.652168323783567" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/neck_connector_link_1_NeckConnector_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="5.637068532273772 1.8827619112269645 -27.652168323783567" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/neck_connector_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_forearm_servo_1">
+  <inertial>
+    <origin xyz="0.11937761792469814 -0.9682015340617485 -2.2608201676560444" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-43.739871" iyy="-118.040276" izz="-75.144789" ixy="5.616898" iyz="-4.276647" ixz="-56.892983"/>
+  </inertial>
+  <visual>
+    <origin xyz="18.904858715201133 0.44390305229340044 -16.563882528704305" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_forearm_servo_1_Servo_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="18.904858715201133 0.44390305229340044 -16.563882528704305" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_forearm_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_elbow_servo_1">
+  <inertial>
+    <origin xyz="0.8697009993148512 0.045171613485797124 -2.6769852777614602" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-8.318866" iyy="-82.211578" izz="-74.703218" ixy="5.487258" iyz="-1.790832" ixz="-24.248048"/>
+  </inertial>
+  <visual>
+    <origin xyz="19.601731337567834 1.4286205812556108 -8.790409880973382" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_elbow_servo_1_Servo_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="19.601731337567834 1.4286205812556108 -8.790409880973382" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_elbow_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_nod_servo_1">
+  <inertial>
+    <origin xyz="0.22800502048546356 -0.017951635718123526 1.9610981180677598" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-172.495547" iyy="-186.634629" izz="-15.654445" ixy="3.359633" iyz="-11.407186" ixz="-50.580066"/>
+  </inertial>
+  <visual>
+    <origin xyz="8.615700074579566 1.873702765314116 -26.51820709558545" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_nod_servo_1_Servo_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="8.615700074579566 1.873702765314116 -26.51820709558545" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_nod_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_tilt_servo_1">
+  <inertial>
+    <origin xyz="0.10591652054404932 -0.3162728722771533 -1.9460132425597223" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-173.907449" iyy="-186.078607" izz="-13.218594" ixy="-2.578536" iyz="9.529346" ixz="-46.915738"/>
+  </inertial>
+  <visual>
+    <origin xyz="7.848941715020043 -1.8890068024088271 -30.561460034372892" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_tilt_servo_1_Servo_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="7.848941715020043 -1.8890068024088271 -30.561460034372892" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_tilt_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="chest_tilt_servo_1">
+  <inertial>
+    <origin xyz="-0.0002916686703668958 0.3026119343330529 1.9510613294842472" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-62.202105" iyy="-71.007156" izz="-13.749617" ixy="5.280252" iyz="-12.15198" ixz="-25.953688"/>
+  </inertial>
+  <visual>
+    <origin xyz="7.297638079542949 3.7196326206981842 -14.844404020019752" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/chest_tilt_servo_1_Servo_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="7.297638079542949 3.7196326206981842 -14.844404020019752" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/chest_tilt_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="chest_bend_servo_1">
+  <inertial>
+    <origin xyz="-0.33453497135369314 -0.03216977014525835 1.945575965648846" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-60.140577" iyy="-69.491926" izz="-9.35459" ixy="-0.123393" iyz="0.312892" ixz="-23.71665"/>
+  </inertial>
+  <visual>
+    <origin xyz="6.311638079542946 -0.11985203053597271 -14.907313581595961" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/chest_bend_servo_1_Servo_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="6.311638079542946 -0.11985203053597271 -14.907313581595961" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/chest_bend_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_knee_Servo_1">
+  <inertial>
+    <origin xyz="0.7227138991763482 -2.7207269276963864 -0.0002916686703842153" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-111.758726" iyy="-29.77615" izz="-141.534886" ixy="57.686643" iyz="0.016467" ixz="0.0085"/>
+  </inertial>
+  <visual>
+    <origin xyz="12.581242559674596 20.25329919716481 0.003093517806135093" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_knee_Servo_1_Servo_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="12.581242559674596 20.25329919716481 0.003093517806135093" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_knee_Servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_forearm_link_1">
+  <inertial>
+    <origin xyz="2.1188080503475746 -4.844456534466002 -1.2718101747779063" rpy="0 0 0"/>
+    <mass value="0.223947903676007"/>
+    <inertia ixx="-11.697745" iyy="-82.243487" izz="-87.767205" ixy="26.107935" iyz="-5.155845" ixz="-15.631993"/>
+  </inertial>
+  <visual>
+    <origin xyz="20.920267386531236 1.3567765698738183 -4.984761562072185" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_forearm_link_1_RightForearm_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="20.920267386531236 1.3567765698738183 -4.984761562072185" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_forearm_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_lower_leg_link_1">
+  <inertial>
+    <origin xyz="2.5575755164498677 -0.4153809385209293 -7.206982033672695" rpy="0 0 0"/>
+    <mass value="0.36679329720363735"/>
+    <inertia ixx="-237.373975" iyy="-67.968735" izz="-267.213371" ixy="103.325914" iyz="64.515717" ixz="30.535265"/>
+  </inertial>
+  <visual>
+    <origin xyz="14.104970691262283 23.982228075884528 0.0030935178061568536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_lower_leg_link_1_LeftLowerLeg(3)_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="14.104970691262283 23.982228075884528 0.0030935178061568536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_lower_leg_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_ankle_servo_1">
+  <inertial>
+    <origin xyz="0.7225320154770358 0.016215786875768856 -2.7207269276963792" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-182.487748" iyy="-90.647617" izz="-153.129486" ixy="61.265901" iyz="85.728949" ixz="42.880917"/>
+  </inertial>
+  <visual>
+    <origin xyz="12.75276454213035 24.067454423042594 14.11309367039405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_ankle_servo_1_Servo_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="12.75276454213035 24.067454423042594 14.11309367039405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_ankle_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_foot_link_1">
+  <inertial>
+    <origin xyz="2.4304308780039587 -2.596321669817577 -2.2386836508139716" rpy="0 0 0"/>
+    <mass value="0.049173423820837"/>
+    <inertia ixx="-54.871143" iyy="-26.725776" izz="-41.944029" ixy="15.549469" iyz="26.359313" ixz="11.695705"/>
+  </inertial>
+  <visual>
+    <origin xyz="14.276122750112995 24.101028060969035 17.842022549113782" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_foot_link_1_RightFoot_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="14.276122750112995 24.101028060969035 17.842022549113782" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_foot_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_connector_link_1">
+  <inertial>
+    <origin xyz="-0.19511132762756667 2.4568329186411875 3.680133013753146" rpy="0 0 0"/>
+    <mass value="0.2947915476168725"/>
+    <inertia ixx="-325.545664" iyy="-344.214314" izz="-18.952972" ixy="1.63616" iyz="-6.805076" ixz="-78.237521"/>
+  </inertial>
+  <visual>
+    <origin xyz="7.793442018586785 3.151674838923598 -29.54566065731517" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_connector_link_1_HeadConnector_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="7.793442018586785 3.151674838923598 -29.54566065731517" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_connector_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_shell_1">
+  <inertial>
+    <origin xyz="-0.2537167276855925 -0.2337523060364357 -2.88457247409103" rpy="0 0 0"/>
+    <mass value="2.5619159764134545"/>
+    <inertia ixx="-2798.76653" iyy="-2963.310808" izz="-196.163495" ixy="53.405068" iyz="-209.779334" ixz="-708.47793"/>
+  </inertial>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Headshell_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_SidePanel_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_DiffusionSheet_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_KissyLips3_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body2_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body3_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body1_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <visual>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1_Body2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="8.137243594012872 2.250796075047333 -35.84501126376862" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/head_shell_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="eye_holder_1">
+  <inertial>
+    <origin xyz="-0.014639411836394167 -0.6635309975343531 0.26839049544939186" rpy="0 0 0"/>
+    <mass value="0.161483244889915"/>
+    <inertia ixx="-166.411241" iyy="-173.193227" izz="-13.450305" ixy="5.807729" iyz="-23.317917" ixz="-40.617187"/>
+  </inertial>
+  <visual>
+    <origin xyz="7.900728360000798 3.880603613371519 -31.511656308001736" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/eye_holder_1_EyeHolder_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="7.900728360000798 3.880603613371519 -31.511656308001736" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/eye_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_hand_link_1">
+  <inertial>
+    <origin xyz="0.10326725627739108 -2.6071418537963336 -0.02962103580535702" rpy="0 0 0"/>
+    <mass value="0.31126953608135455"/>
+    <inertia ixx="-87.429816" iyy="-121.460097" izz="-199.780809" ixy="98.430611" iyz="-19.428456" ixz="-23.07508"/>
+  </inertial>
+  <visual>
+    <origin xyz="19.484035140238408 13.710824567856426 -3.8550396586096345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_hand_link_1_MeshBody2_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="19.484035140238408 13.710824567856426 -3.8550396586096345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_hand_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_hip_servo_1">
+  <inertial>
+    <origin xyz="-0.7227138922542435 -0.5002916688031327 2.501223688168526" rpy="0 0 0"/>
+    <mass value="0.21176334631614013"/>
+    <inertia ixx="-7.370603" iyy="-0.204687" izz="-7.166737" ixy="0.055845" iyz="1.210013" ixz="0.009428"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.6773791339927397 5.317321369472445 3.4835096644374666" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_hip_servo_1_Servo_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.6773791339927397 5.317321369472445 3.4835096644374666" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_hip_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_upper_leg_link_1">
+  <inertial>
+    <origin xyz="1.205946389750409 -8.885900069188674 0.2818309667872134" rpy="0 0 0"/>
+    <mass value="0.40917868626135256"/>
+    <inertia ixx="-88.459616" iyy="-1.010097" izz="-89.406612" ixy="9.302963" iyz="-1.674168" ixz="-0.176123"/>
+  </inertial>
+  <visual>
+    <origin xyz="2.7526208660070175 5.815659973576437 0.0034820586714539026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_upper_leg_link_1_RightUpperLeg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="2.7526208660070175 5.815659973576437 0.0034820586714539026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_upper_leg_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_knee_servo_1">
+  <inertial>
+    <origin xyz="-0.7227138922542844 -2.501223688168519 -0.5002916688031243" rpy="0 0 0"/>
+    <mass value="0.21176334631614013"/>
+    <inertia ixx="-112.50983" iyy="-1.127209" izz="-113.635919" ixy="11.258831" iyz="0.252609" ixz="0.025279"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.5840085582862677 20.549816774988265 -0.4485367683106345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_knee_servo_1_Servo_17.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.5840085582862677 20.549816774988265 -0.4485367683106345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_knee_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_lower_leg_link_1">
+  <inertial>
+    <origin xyz="-2.557575740585417 -0.41538109959340375 -7.206980982771132" rpy="0 0 0"/>
+    <mass value="0.36679334835639393"/>
+    <inertia ixx="-239.011097" iyy="-21.834664" izz="-222.203089" ixy="23.498483" iyz="65.153547" ixz="6.968957"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.060280426698527734 24.05924241489776 0.05146323169137901" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_lower_leg_link_1_LeftLowerLeg(3)_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.060280426698527734 24.05924241489776 0.05146323169137901" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_lower_leg_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_ankle_servo_1">
+  <inertial>
+    <origin xyz="-0.7115150701543902 0.5160943991907345 -2.501223688168178" rpy="0 0 0"/>
+    <mass value="0.21176334631614013"/>
+    <inertia ixx="-183.132594" iyy="-61.387389" izz="-123.673336" ixy="10.876708" iyz="86.107526" ixz="7.632402"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.4222916510066215 24.589360727024268 14.391463231691631" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_ankle_servo_1_Servo_18.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.4222916510066215 24.589360727024268 14.391463231691631" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_ankle_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_foot_link_1">
+  <inertial>
+    <origin xyz="-2.4303955788467118 -2.5964123499896274 -2.2386947156984824" rpy="0 0 0"/>
+    <mass value="0.049172133299005855"/>
+    <inertia ixx="-55.044225" iyy="-20.206594" izz="-35.366107" ixy="3.045618" iyz="26.457807" ixz="2.29561"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.11208349537538975 24.123055752613354 17.900888871600923" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_foot_link_1_RightFoot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.11208349537538975 24.123055752613354 17.900888871600923" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_foot_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_chest_servo_1">
+  <inertial>
+    <origin xyz="-0.4326774008334411 -2.4324877938414176 0.4376310658461442" rpy="0 0 0"/>
+    <mass value="0.21176334631614013"/>
+    <inertia ixx="-95.470866" iyy="-95.3945" izz="-0.600941" ixy="0.29806" iyz="-5.676244" ixz="-4.995432"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.6803489849300366 -1.1677702882130134 -20.758672769222414" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_chest_servo_1_Servo_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.6803489849300366 -1.1677702882130134 -20.758672769222414" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_chest_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_shoulder_connector_link_1">
+  <inertial>
+    <origin xyz="0.6941986305688832 -1.071741652640561 0.19232545189429828" rpy="0 0 0"/>
+    <mass value="0.08600611455643586"/>
+    <inertia ixx="-40.031562" iyy="-40.155224" izz="-0.475488" ixy="-0.229591" iyz="-2.648109" ixz="3.455479"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.172268021158294 0.35862645322768416 -21.33559312216603" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_shoulder_connector_link_1_RightShoulderConnector_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.172268021158294 0.35862645322768416 -21.33559312216603" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_shoulder_connector_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_shoulder_link_1">
+  <inertial>
+    <origin xyz="0.04575416930337539 -1.6243818390256732 -1.5256981410973296" rpy="0 0 0"/>
+    <mass value="0.10206157321103919"/>
+    <inertia ixx="-40.781725" iyy="-42.360053" izz="-1.683779" ixy="-0.293303" iyz="-1.46566" ixz="8.150557"/>
+  </inertial>
+  <visual>
+    <origin xyz="-3.9520891343280056 -0.9054765749779983 -21.503266714740302" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_shoulder_link_1_RightShoulder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-3.9520891343280056 -0.9054765749779983 -21.503266714740302" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_shoulder_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_shoulder_servo_1">
+  <inertial>
+    <origin xyz="-0.35835995810582544 0.4561029773343144 -2.4411627894645953" rpy="0 0 0"/>
+    <mass value="0.21176334631614013"/>
+    <inertia ixx="-89.975547" iyy="-92.603799" izz="-3.959001" ixy="-1.4804" iyz="-7.708888" ixz="17.150952"/>
+  </inertial>
+  <visual>
+    <origin xyz="-4.302333290001253 2.228812553640497 -22.97862877845854" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_shoulder_servo_1_Servo_16.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-4.302333290001253 2.228812553640497 -22.97862877845854" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_shoulder_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_forearm_servo_1">
+  <inertial>
+    <origin xyz="0.10218077056412689 -0.9218117060306452 -2.2809636770015764" rpy="0 0 0"/>
+    <mass value="0.21176334631614013"/>
+    <inertia ixx="-51.898396" iyy="-55.263438" izz="-4.166004" ixy="-1.228064" iyz="-4.541535" ixz="13.92541"/>
+  </inertial>
+  <visual>
+    <origin xyz="-4.11487523543104 0.4535088730103851 -17.876174360654954" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_forearm_servo_1_Servo_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-4.11487523543104 0.4535088730103851 -17.876174360654954" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_forearm_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_upper_arm_link_1">
+  <inertial>
+    <origin xyz="-0.3079976892512697 2.0839704977828086 -2.4948886590776542" rpy="0 0 0"/>
+    <mass value="0.2528063544081857"/>
+    <inertia ixx="-46.474251" iyy="-50.381096" izz="-5.588694" ixy="-1.998242" iyz="-6.194982" ixz="14.719396"/>
+  </inertial>
+  <visual>
+    <origin xyz="-4.641860501682814 3.907982684509812 -15.93088636603061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_upper_arm_link_1_RightUpperArm_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-4.641860501682814 3.907982684509812 -15.93088636603061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_upper_arm_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_elbow_servo_1">
+  <inertial>
+    <origin xyz="-0.5944063557392552 -0.38757433167875854 -2.554331800347036" rpy="0 0 0"/>
+    <mass value="0.21176334631614013"/>
+    <inertia ixx="-12.011142" iyy="-17.124821" izz="-5.712368" ixy="-1.272952" iyz="-1.87242" ixz="7.962205"/>
+  </inertial>
+  <visual>
+    <origin xyz="-5.650525121713751 0.8014407852032575 -9.991517873280209" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_elbow_servo_1_Servo_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-5.650525121713751 0.8014407852032575 -9.991517873280209" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_elbow_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_forearm_link_1">
+  <inertial>
+    <origin xyz="-2.092587025780446 -4.758042989145508 -1.5992655249107912" rpy="0 0 0"/>
+    <mass value="0.2239481878604043"/>
+    <inertia ixx="-13.449728" iyy="-11.693485" izz="-14.15417" ixy="-7.022563" iyz="-6.611527" ixz="5.836155"/>
+  </inertial>
+  <visual>
+    <origin xyz="-7.35408014001324 1.2024797928812756 -6.552785002730934" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_forearm_link_1_RightForearm_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-7.35408014001324 1.2024797928812756 -6.552785002730934" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_forearm_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_shoulder_servo_1">
+  <inertial>
+    <origin xyz="0.0681708908920804 2.284677261896223 -0.9157377328201264" rpy="0 0 0"/>
+    <mass value="0.21176334532421678"/>
+    <inertia ixx="-79.098569" iyy="-155.441883" izz="-77.579992" ixy="6.898571" iyz="-6.966298" ixz="-77.71725"/>
+  </inertial>
+  <visual>
+    <origin xyz="19.133027208375708 3.9935834715931064 -20.16776810980505" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_shoulder_servo_1_Servo_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="19.133027208375708 3.9935834715931064 -20.16776810980505" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_shoulder_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_shoulder_link_1">
+  <inertial>
+    <origin xyz="0.6751758031257182 1.4340350020871013 -2.9776807426291256" rpy="0 0 0"/>
+    <mass value="0.1020615316178321"/>
+    <inertia ixx="-35.617606" iyy="-72.506994" izz="-36.980021" ixy="1.29398" iyz="-1.269892" ixz="-36.247116"/>
+  </inertial>
+  <visual>
+    <origin xyz="19.69944754223669 2.1005363342752474 -21.64778649430249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_shoulder_link_1_RightShoulder_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="19.69944754223669 2.1005363342752474 -21.64778649430249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_shoulder_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_upper_arm_link_1">
+  <inertial>
+    <origin xyz="0.6345776017938505 2.0205958750073845 -2.485310566136542" rpy="0 0 0"/>
+    <mass value="0.2528063543948451"/>
+    <inertia ixx="-38.249659" iyy="-125.54383" izz="-89.127611" ixy="8.992884" iyz="-5.850369" ixz="-57.386358"/>
+  </inertial>
+  <visual>
+    <origin xyz="19.31509778722268 3.9250281027072234 -14.638078682416081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_upper_arm_link_1_RightUpperArm_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="19.31509778722268 3.9250281027072234 -14.638078682416081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/right_upper_arm_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_hand_link_1">
+  <inertial>
+    <origin xyz="-0.16687441703975114 -2.6021816574183028 -0.09764081386043255" rpy="0 0 0"/>
+    <mass value="0.31126953608135455"/>
+    <inertia ixx="-88.067684" iyy="-17.125454" izz="-90.20671" ixy="-27.858821" iyz="-24.571669" ixz="8.495717"/>
+  </inertial>
+  <visual>
+    <origin xyz="-5.7299799637918625 13.487679874367537 -5.004336050918685" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_hand_link_1_MeshBody2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-5.7299799637918625 13.487679874367537 -5.004336050918685" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sammy_sim/meshes/left_hand_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid1" type="fixed">
+  <origin xyz="-14.33263025195361 -5.317321369472444 -3.48350966443747" rpy="0 0 0"/>
+  <parent link="base_link_1"/>
+  <child link="right_hip_servo_1"/>
+</joint>
+
+<joint name="Revolute2" type="revolute">
+  <origin xyz="-11.41263025195386 -5.815659973576437 -0.0034820586714643387" rpy="0 0 0"/>
+  <parent link="base_link_1"/>
+  <child link="right_upper_leg_link_1"/>
+  <axis xyz="1.0 -3.316379177811575e-16 2.4423009187951472e-15"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid3" type="fixed">
+  <origin xyz="-9.79763807954294 0.10396081315865602 -1.1228165976495958" rpy="0 0 0"/>
+  <parent link="base_link_1"/>
+  <child link="spine_link_1"/>
+</joint>
+
+<joint name="Revolute4" type="revolute">
+  <origin xyz="0.34999999999999254 -1.7541523789077473e-14 17.000000000000007" rpy="0 0 0"/>
+  <parent link="spine_link_1"/>
+  <child link="spine_connector_link_1"/>
+  <axis xyz="-1.0 4.9124132851577894e-17 -2.2228704427968366e-15"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute5" type="revolute">
+  <origin xyz="2.1500000000000012 1.2598309011862048 0.02064219989219218" rpy="0 0 0"/>
+  <parent link="spine_connector_link_1"/>
+  <child link="chest_flat_back_link_1"/>
+  <axis xyz="-3.610224707913042e-16 -0.9998657945922257 -0.016382698327139907"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid6" type="fixed">
+  <origin xyz="-7.135006884906988 -0.6838324454807476 4.612475412449932" rpy="0 0 0"/>
+  <parent link="chest_flat_back_link_1"/>
+  <child link="right_torso_servo_1"/>
+</joint>
+
+<joint name="Rigid7" type="fixed">
+  <origin xyz="-0.3874471514602478 -0.6188404587816811 7.090248793336048" rpy="0 0 0"/>
+  <parent link="chest_flat_back_link_1"/>
+  <child link="neck_servo_1"/>
+</joint>
+
+<joint name="Revolute8" type="revolute">
+  <origin xyz="-1.9239667463601613 -0.9697210496581459 -0.1209021274112061" rpy="0 0 0"/>
+  <parent link="right_torso_servo_1"/>
+  <child link="right_shoulder_connector_link_1"/>
+  <axis xyz="-0.9984898047705262 0.00787304842679704 -0.0543702572902785"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute10" type="revolute">
+  <origin xyz="-0.10499925427385115 -1.0029609875625711 1.9077915750133627" rpy="0 0 0"/>
+  <parent link="neck_servo_1"/>
+  <child link="neck_link_1"/>
+  <axis xyz="-0.05449194228501787 -0.009377633879199107 0.9984701739205254"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute11" type="revolute">
+  <origin xyz="2.1530159530032735 -1.6247521792275554 2.7563023531915505" rpy="0 0 0"/>
+  <parent link="neck_link_1"/>
+  <child link="neck_connector_link_1"/>
+  <axis xyz="0.9985140732181731 1.2259509399091325e-05 0.05449445324954342"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute13" type="revolute">
+  <origin xyz="0.7945888270355574 1.656633281981847 -5.083903965598186" rpy="0 0 0"/>
+  <parent link="right_shoulder_link_1"/>
+  <child link="right_forearm_servo_1"/>
+  <axis xyz="-0.05433761658143549 0.0043022328183619325 0.9985133520474614"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid14" type="fixed">
+  <origin xyz="-0.2866335503451545 2.4964075214516126 -5.847668801442699" rpy="0 0 0"/>
+  <parent link="right_upper_arm_link_1"/>
+  <child link="right_elbow_servo_1"/>
+</joint>
+
+<joint name="Rigid16" type="fixed">
+  <origin xyz="-2.978631542305794 0.009059145912848399 -1.1339612281981175" rpy="0 0 0"/>
+  <parent link="neck_connector_link_1"/>
+  <child link="head_nod_servo_1"/>
+</joint>
+
+<joint name="Rigid17" type="fixed">
+  <origin xyz="-2.211873182746271 3.7717687136357916 2.9092917105893257" rpy="0 0 0"/>
+  <parent link="neck_connector_link_1"/>
+  <child link="head_tilt_servo_1"/>
+</joint>
+
+<joint name="Rigid18" type="fixed">
+  <origin xyz="2.1499999999999986 -3.8235934338568227 -1.032779382330661" rpy="0 0 0"/>
+  <parent link="spine_connector_link_1"/>
+  <child link="chest_tilt_servo_1"/>
+</joint>
+
+<joint name="Rigid19" type="fixed">
+  <origin xyz="3.136000000000002 0.015891217377334232 -0.969869820754452" rpy="0 0 0"/>
+  <parent link="spine_connector_link_1"/>
+  <child link="chest_bend_servo_1"/>
+</joint>
+
+<joint name="Rigid20" type="fixed">
+  <origin xyz="-1.1686123077207355 -14.437639223588373 0.0003885408653292455" rpy="0 0 0"/>
+  <parent link="right_upper_leg_link_1"/>
+  <child link="right_knee_Servo_1"/>
+</joint>
+
+<joint name="Revolute21" type="revolute">
+  <origin xyz="-1.3185360489634022 0.07184401138179242 -3.8056483189011967" rpy="0 0 0"/>
+  <parent link="right_elbow_servo_1"/>
+  <child link="right_forearm_link_1"/>
+  <axis xyz="-0.997071711341082 0.004496340611096816 -0.07633993296087388"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute23" type="revolute">
+  <origin xyz="-1.5237281315876867 -3.7289288787197172 -2.1760371282653068e-14" rpy="0 0 0"/>
+  <parent link="right_knee_Servo_1"/>
+  <child link="right_lower_leg_link_1"/>
+  <axis xyz="-0.9997572246666735 -0.022033876798933406 -3.2579602094996135e-15"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid24" type="fixed">
+  <origin xyz="1.3522061491319324 -0.08522634715806632 -14.110000152587894" rpy="0 0 0"/>
+  <parent link="right_lower_leg_link_1"/>
+  <child link="right_ankle_servo_1"/>
+</joint>
+
+<joint name="Revolute25" type="revolute">
+  <origin xyz="-1.5233582079826444 -0.03357363792644108 -3.7289288787197314" rpy="0 0 0"/>
+  <parent link="right_ankle_servo_1"/>
+  <child link="right_foot_link_1"/>
+  <axis xyz="0.9995145082732093 0.022028527517102364 0.022033876798977073"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute26" type="revolute">
+  <origin xyz="-2.1563734863130133 -1.2689129276966336 1.8934923335316043" rpy="0 0 0"/>
+  <parent link="neck_connector_link_1"/>
+  <child link="head_connector_link_1"/>
+  <axis xyz="-0.0005232697855029728 0.9999560289495549 0.009363031357389546"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid28" type="fixed">
+  <origin xyz="-0.34380157542608725 0.900878763876265 6.299350606453448" rpy="0 0 0"/>
+  <parent link="head_connector_link_1"/>
+  <child link="head_shell_1"/>
+</joint>
+
+<joint name="Rigid29" type="fixed">
+  <origin xyz="-0.10728634141401283 -0.7289287744479211 1.9659956506865655" rpy="0 0 0"/>
+  <parent link="head_connector_link_1"/>
+  <child link="eye_holder_1"/>
+</joint>
+
+<joint name="Rigid30" type="fixed">
+  <origin xyz="1.4362322462928283 -12.354047997982608 -1.1297219034625505" rpy="0 0 0"/>
+  <parent link="right_forearm_link_1"/>
+  <child link="right_hand_link_1"/>
+</joint>
+
+<joint name="Rigid31" type="fixed">
+  <origin xyz="0.6773791339927397 -5.317321369472445 -3.4835096644374666" rpy="0 0 0"/>
+  <parent link="base_link_1"/>
+  <child link="left_hip_servo_1"/>
+</joint>
+
+<joint name="Revolute32" type="revolute">
+  <origin xyz="-2.7526208660070175 -5.815659973576437 -0.0034820586714539026" rpy="0 0 0"/>
+  <parent link="base_link_1"/>
+  <child link="left_upper_leg_link_1"/>
+  <axis xyz="1.0 4.913097324626652e-16 0.0"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid33" type="fixed">
+  <origin xyz="1.1686123077207498 -14.734156801411828 0.4520188269820884" rpy="0 0 0"/>
+  <parent link="left_upper_leg_link_1"/>
+  <child link="left_knee_servo_1"/>
+</joint>
+
+<joint name="Revolute34" type="revolute">
+  <origin xyz="1.52372813158774 -3.5094256399094945 -0.5000000000020135" rpy="0 0 0"/>
+  <parent link="left_knee_servo_1"/>
+  <child link="left_lower_leg_link_1"/>
+  <axis xyz="0.9997572246666733 -0.022033876798974818 -5.9397977136414e-14"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid35" type="fixed">
+  <origin xyz="-1.3620112243080937 -0.5301183121265076 -14.340000000000252" rpy="0 0 0"/>
+  <parent link="left_lower_leg_link_1"/>
+  <child link="left_ankle_servo_1"/>
+</joint>
+
+<joint name="Revolute36" type="revolute">
+  <origin xyz="1.5343751463820112 0.4663049744109138 -3.509425639909292" rpy="0 0 0"/>
+  <parent link="left_ankle_servo_1"/>
+  <child link="left_foot_link_1"/>
+  <axis xyz="-0.9995145082732115 0.02202852751712189 0.02203387679899813"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid37" type="fixed">
+  <origin xyz="6.61728909461291 -0.19602142613182982 4.860847166979809" rpy="0 0 0"/>
+  <parent link="chest_flat_back_link_1"/>
+  <child link="left_chest_servo_1"/>
+</joint>
+
+<joint name="Revolute38" type="revolute">
+  <origin xyz="1.8526170060883307 -1.5263967414406976 0.5769203529436169" rpy="0 0 0"/>
+  <parent link="left_chest_servo_1"/>
+  <child link="left_shoulder_connector_link_1"/>
+  <axis xyz="-0.9982717232530846 0.022923449803911755 -0.05411175475308466"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute39" type="revolute">
+  <origin xyz="2.7798211131697115 1.2641030282056824 0.16767359257427117" rpy="0 0 0"/>
+  <parent link="left_shoulder_connector_link_1"/>
+  <child link="left_shoulder_link_1"/>
+  <axis xyz="-0.022021230258616676 -0.9996093453104589 -0.01721110646979946"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid40" type="fixed">
+  <origin xyz="0.3502441556732476 -3.1342891286184953 1.4753620637182365" rpy="0 0 0"/>
+  <parent link="left_shoulder_link_1"/>
+  <child link="left_shoulder_servo_1"/>
+</joint>
+
+<joint name="Revolute41" type="revolute">
+  <origin xyz="0.16278610110303404 -1.3589854479883834 -3.627092354085349" rpy="0 0 0"/>
+  <parent link="left_shoulder_link_1"/>
+  <child link="left_forearm_servo_1"/>
+  <axis xyz="0.05448515367637697 0.015989753503610555 -0.9983865462894687"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid42" type="fixed">
+  <origin xyz="0.5269852662517742 -3.454473811499427 -1.9452879946243442" rpy="0 0 0"/>
+  <parent link="left_forearm_servo_1"/>
+  <child link="left_upper_arm_link_1"/>
+</joint>
+
+<joint name="Rigid43" type="fixed">
+  <origin xyz="1.0086646200309373 3.1065418993065546 -5.9393684927504005" rpy="0 0 0"/>
+  <parent link="left_upper_arm_link_1"/>
+  <child link="left_elbow_servo_1"/>
+</joint>
+
+<joint name="Revolute44" type="revolute">
+  <origin xyz="1.7035550182994887 -0.40103900767801814 -3.4387328705492752" rpy="0 0 0"/>
+  <parent link="left_elbow_servo_1"/>
+  <child link="left_forearm_link_1"/>
+  <axis xyz="-0.9992402863349232 0.02208035176343562 -0.03211398809471583"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute45" type="revolute">
+  <origin xyz="-2.776415497565612 -3.703821690799056 -0.2216307774762818" rpy="0 0 0"/>
+  <parent link="right_shoulder_connector_link_1"/>
+  <child link="right_shoulder_servo_1"/>
+  <axis xyz="-0.0068960238026129555 -0.9998117814464196 -0.018134126299645465"/>
+  <limit upper="3.14159" lower="-3.14159" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid46" type="fixed">
+  <origin xyz="-0.5664203338609823 1.893047137317859 1.4800183844974413" rpy="0 0 0"/>
+  <parent link="right_shoulder_servo_1"/>
+  <child link="right_shoulder_link_1"/>
+</joint>
+
+<joint name="Rigid47" type="fixed">
+  <origin xyz="-0.41023907202154675 -3.481125050413823 -1.9258038462882237" rpy="0 0 0"/>
+  <parent link="right_forearm_servo_1"/>
+  <child link="right_upper_arm_link_1"/>
+</joint>
+
+<joint name="Rigid48" type="fixed">
+  <origin xyz="-1.6241001762213774 -12.285200081486261 -1.548448951812249" rpy="0 0 0"/>
+  <parent link="left_forearm_link_1"/>
+  <child link="left_hand_link_1"/>
+</joint>
+
+</robot>

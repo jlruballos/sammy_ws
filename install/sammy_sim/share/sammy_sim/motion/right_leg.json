@@ -1,0 +1,83 @@
+{
+    "Name": "Wave",
+    "Keyframes": [
+        {
+            "HasEmote": "True",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "Expression": "Happy",
+            "WaitTime": 1500,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightHip",
+                    "Angle": 55
+                },
+                {
+                    "Joint": "RightKnee",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightKnee",
+                    "Angle": 55
+                },
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 30
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 90
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 30
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 90
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 800,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 30
+                }
+            ]
+        }
+    ]
+}
